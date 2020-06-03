@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oprah Likes You. And so do other people.</title>
+
+		<style>
+
+			/* Basic CSS comment */
+			body {
+				background: grey;
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+				font-size: 30px;
+				color: black;
+			}
+
+			h1 {
+				font-size: 80px;
+				color: #333	;
+			}
+			h2 {
+				font-size: 40px;
+				color: #333	;
+			}
+
+			strong {
+				font-style: bold;
+			}
+
+
+		</style>
+
+		<script>
+			var car_name =[
+			'Rolls-Royce Phantom',
+			'Bentley Flying Spur',
+			'Mercedes-Maybach S650'
+			];
+
+			var car_image =[
+			'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/34-rolls-royce-phantom-2018-review-cornering_0.jpg',
+			'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/bentley-flying-spur_3.jpg',
+			'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/maybach-s.jpg'
+			];
+
+			var randomNumber = Math.floor(Math.random()*car_name.length);
+			var carname = car_name[randomNumber];
+			var carimage = car_image[randomNumber];
+
+			/* this is an event */
+			/* alert("I'm annoying"); */
+
+			var username = prompt("Hello, who are you?");
+
+							
+
+			if(username==="Chris") {
+
+				document.write("<h1>Hello " + username + "!</h1>");
+							document.write("<h1>You have won <strong>" + carname + "</strong>!</h1>");
+				document.write("<h2>Here are the details of the car you won!</h2>");
+				document.write('<img src="'+ carimage +'">');
+
+
+			}
+			else if(username==="Sreenivas") {
+			
+								document.write("<h1>Hello " + username + "!</h1>");
+							document.write("<h1>You have won <strong>" + carname + "</strong>!</h1>");
+				document.write("<h2>Here are the details of the car you won!</h2>");
+				document.write('<img src="'+ carimage +'">');
+			}
+			else {
+				document.write("<h1>Hello " + username + "!");
+			}
+	
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+
+</html>
